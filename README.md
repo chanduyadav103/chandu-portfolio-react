@@ -15,9 +15,10 @@ It focuses on clean design, smooth animations, responsiveness, and great user ex
  **Tech Stack**
  **Frontend**
 
-* HTML5
-* CSS3 (Custom UI, Flexbox, Grid, Responsive Design)
+* React.js
+* Vite
 * JavaScript (ES6+)
+* CSS3 (Custom UI, Flexbox, Grid, Responsive Design)
 * CSS Animations + Intersection Observer
 * EmailJS (for contact form email sending)
 
@@ -79,9 +80,12 @@ Shows current IST time dynamically.
 
 ```bash
 ├── index.html
-├── portfolio2.css
-├── portfolio2.js
-├── images/
+├── package.json
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── styles.css
+├── public/images/
 │   ├── logo.png
 │   ├── WhatsApp Image 2025-10-27.jpg
 │   ├── interior new design.mp4
@@ -98,23 +102,27 @@ Shows current IST time dynamically.
 **Step: 1. Clone the repo**
 
 ```bash
-git clone https://github.com/chanduyadav103/Chandu-s-Portfolio.git
+git clone https://github.com/chanduyadav103/chandu-portfolio-react.git
 ```
 
 **Step: 2. Open the folder**
 
 ```bash
-cd Chandu-s-Portfolio
+cd chandu-portfolio-react
 ```
 
- **Step: 3. Run the project**
-
-You can simply open **index.html** in your browser.
-
-Or use Live Server:
+ **Step: 3. Install and run the project**
 
 ```bash
-npx live-server
+npm install
+npm run dev
+```
+
+Create a production build with:
+
+```bash
+npm run build
+```
 
  **EmailJS Contact Form Setup**
 
